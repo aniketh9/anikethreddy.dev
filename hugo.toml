@@ -1,0 +1,74 @@
+baseURL = "https://anikethreddy.dev/"
+locale = "en-US"
+title = "Aniketh Reddy"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+enableEmoji = false
+pygmentsUseClasses = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  title = "Aniketh Reddy"
+  description = "Backend engineer (12 yrs) building production AI systems: RAG, agents, LLM serving. Notes on what works, with numbers."
+  author = "Aniketh Reddy"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  ShowShareButtons = false
+  ShowBreadCrumbs = false
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  disableSpecial1stPost = true
+  hidemeta = false
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Aniketh \U0001F44B"
+    Content = "Backend engineer (12 yrs) building production AI systems: RAG, agents, LLM serving. Notes on what works, with numbers."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/aniketh9"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/anikethreddy"
+
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/anikethrm"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    lineNumbersInTable = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
